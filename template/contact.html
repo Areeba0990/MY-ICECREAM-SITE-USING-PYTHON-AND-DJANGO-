@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}contact{% endblock title %}
+{% block body %}
+    <div class="position-relative overflow-hidden p-0 p-md-0 m-md-0 text-center bg-light rounded" style="background-image: url('/static/img/myimg.jpg'); height:400px; background-size: cover; background-position: center; background-repeat: no-repeat">
+    </div>
+
+    <main role="main" class="container text-center my-5">
+
+      <div class="starter-template">
+        <h1>THANKS TO VISIT</h1>
+        <p class="lead">Get in touch with us – we love hearing from our customers!<br>  Contact us anytime; we're here for you.</p>
+      </div>
+
+    </main>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="p-4 bg-light" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 30px 100px 30px 100px">
+            <form method="post" action="/contact">
+                {% csrf_token %}
+
+                <div class="form-group">
+    <label for="exampleFormControlInput1">NAME</label>
+    <input class="form-control mt-2 mb-4" id="exampleFormControlInput1" name="name" placeholder="Enter your name">
+  </div>
+                <div class="form-group">
+    <label for="exampleFormControlInput1">EMAIL</label>
+    <input type="email" class="form-control mt-2 mb-4" id="exampleFormControlInput1" name="email" placeholder="Enter your email">
+  </div>
+                <div class="form-group">
+    <label for="exampleFormControlInput1">PHONE</label>
+    <input class="form-control mt-2 mb-4" id="exampleFormControlInput1" name="phone" placeholder="Your contact number">
+  </div>
+                <div class="form-group">
+    <label for="exampleFormControlTextarea1">Why you want to contact with us...</label>
+    <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" name="desc"></textarea>
+  </div>
+                <div class="text-center my-4">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+            </form>
+        </div>
+    </div>
+
+         </div>
+    </div>
+{% endblock body %}

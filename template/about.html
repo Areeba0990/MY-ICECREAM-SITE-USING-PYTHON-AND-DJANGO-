@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}about{% endblock title %}
+{% block body %}
+
+    <div class="position-relative overflow-hidden p-0 p-md-0 m-md-0 text-center bg-light rounded" style="background-image: url('/static/img/myimg.jpg'); height:400px; background-size: cover; background-position: center; background-repeat: no-repeat">
+    </div>
+  <section class="py-5">
+        <div class="container">
+            <div class="row ">
+                <!-- About Us Section -->
+                <div class="col-md-8 px-5 py-5" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius: 30px 100px 30px 100px">
+                    <h2 class="mb-4">About Us</h2>
+                    <p class="mb-4">
+                        Welcome to Ice Cream Parlor! We are a family-owned business dedicated to serving the most delicious and delightful ice cream in town. Our parlor is a place where friends and family can come together to enjoy sweet treats and create wonderful memories.
+                    </p>
+                    <p class="mb-4">
+                        Since our opening in [Year], we have been committed to using only the freshest and highest quality ingredients. Our ice cream is made in small batches to ensure every scoop is bursting with flavor. From classic vanilla to exotic new flavors, we have something for everyone.
+                    </p>
+                    <p class="mb-4">
+                        We believe in giving back to our community, and we are proud to support local farmers and suppliers. Our friendly staff is here to make your visit special, whether you're stopping by for a quick cone or celebrating a special occasion with one of our ice cream cakes.
+                    </p>
+                    <p class="mb-4">
+                        Thank you for choosing Ice Cream Parlor. We look forward to serving you and being a part of your sweet moments.
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card Section -->
+
+                <div class="mx-0 col-md-4 d-flex align-items-center justify-content-center">
+    <div class="card text-center" style="width: 15rem;">
+        <img class="card-img-top mx-auto" src="/static/img/owner.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">THE OWNER</h5>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+    </section>
+
+{% endblock body %}
